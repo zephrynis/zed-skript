@@ -7,7 +7,7 @@
       "file-types": ["sk"],
       "injection-regex": "skript",
       "root": ".",
-      "highlights": ["languages/skript/highlights.scm"]
+      "highlights": ["languages/skript/queries/highlights.scm"]
     }
   ],
   "metadata": {
