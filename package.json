@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/WIL24000223/zed-skript"
+    "url": "https://github.com/zephrynis/zed-skript.git"
   },
   "license": "MIT",
   "tree-sitter": [
