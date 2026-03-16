@@ -12,7 +12,7 @@
 ; ---------------------------------------------------------------------------
 
 ; "options:" keyword
-(options_header) @keyword
+"options" @keyword
 
 ; "on <event>:"  →  "on" is a keyword, the event name is a label
 (event_header "on" @keyword)
@@ -36,7 +36,6 @@
 
 ; Parameters: variable name and type
 (parameter name: (variable_name) @variable.parameter)
-(parameter ":" @punctuation.delimiter)
 (parameter type: (type_name) @type)
 
 ; ---------------------------------------------------------------------------
@@ -49,9 +48,8 @@
 (loop_statement "loop" @keyword.control)
 (while_statement "while" @keyword.control)
 (return_statement "return" @keyword.control)
-(stop_statement) @keyword.control
-(exit_statement "exit" @keyword.control)
-(continue_statement) @keyword.control
+"stop" @keyword.control
+"continue" @keyword.control
 
 ; ---------------------------------------------------------------------------
 ; Effect keywords
@@ -104,7 +102,32 @@
 ; ---------------------------------------------------------------------------
 ; Condition keywords (comparison operators)
 ; ---------------------------------------------------------------------------
-(comparison_operator) @operator
+[
+  "="
+  "!="
+  "<"
+  "<="
+  ">"
+  ">="
+  "is"
+  "is not"
+  "isn't"
+  "contains"
+  "doesn't contain"
+  "matches"
+  "doesn't match"
+  "is set"
+  "is not set"
+  "isn't set"
+  "is a"
+  "is in"
+  "isn't in"
+  "is not in"
+  "is less than"
+  "is less than or equal to"
+  "is greater than"
+  "is greater than or equal to"
+] @operator
 
 ; Boolean connectives
 [
