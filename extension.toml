@@ -8,4 +8,4 @@ repository = "https://github.com/zephrynis/zed-skript.git"
 
 [grammars.skript]
 repository = "https://github.com/zephrynis/zed-skript.git"
-commit = "c1672c0f323e732c66a30ebe324fa221c220d3c3"
+commit = "a4830cbe948705bdae422b8630e640103b662121"
